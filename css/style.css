@@ -1,0 +1,45 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* common*/
+body{
+    color: white;
+    background-color: #000000;
+}
+ul{
+    list-style: none;
+}
+/* header */
+header{
+    display: block;
+    height: 78px;
+    padding-top: 5px;
+}
+header ul{
+    display: flex;
+    gap: 3px;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+header li{
+    padding: 5px;
+    background-color: #4A4A4A;
+    border-radius: 5px;
+
+}
+/* main */
+main{
+    display: block;
+    height: calc(100vh - 158px);
+    background-color: green;
+}
+/* footer */
+footer{
+    display: block;
+    height: 80px;
+    background-color: yellow;
+}
