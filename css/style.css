@@ -8,18 +8,18 @@
 body{
     color: white;
     background-color: #000000;
+    font-family: 'Roboto', sans-serif;
 }
 ul{
     list-style: none;
+    display: flex;
 }
 /* header */
 header{
-    display: block;
     height: 78px;
     padding-top: 5px;
 }
 header ul{
-    display: flex;
     gap: 3px;
     justify-content: flex-end;
     align-items: center;
@@ -34,12 +34,45 @@ header li{
 /* main */
 main{
     display: block;
-    height: calc(100vh - 158px);
+    height: calc(100vh - 159px);
     background-color: green;
 }
 /* footer */
 footer{
+    background-color: #222222;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .container .element.end{
+    padding: 31px 20px;
+    color: red;
+    background-color: #4A4A4A;
+}
+footer .container .element{
+    display: flex;
+}
+footer .container .element:first-child{
+    padding-left: 10px;
+}
+footer .container .element  ul{
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+footer .container .element li i{
     display: block;
-    height: 80px;
-    background-color: yellow;
+    font-size: 30px;
+    padding: 6px 0;
+}
+footer .container .element li i.special{
+    color: #4BC800;
+}
+footer .container .element li i:last-child{
+    font-size: 12px;
+}
+footer .container .element li span{
+    font-size: 14px;
 }
